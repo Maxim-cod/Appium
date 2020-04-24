@@ -60,9 +60,9 @@ public class main {
 
         try {
             assertEquals(expectResult, actualResult);
-            System.out.println("the result is " + expectResult);
+            System.out.println("the result is " + actualResult);
         } catch (AssertionError error) {
-            System.out.println("the result is not " + expectResult);
+            System.out.println("the result is not 18");
         }
     }
 
