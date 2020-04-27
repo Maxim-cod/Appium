@@ -66,10 +66,26 @@ public class main {
         }
     }
 
+        @Test
+        public void testing ()   {
+        driver.findElement(By.id("com.google.android.gms:id/cancel")).click();
+        driver.findElement(By.className("android.widget.TextView")).click();
+        driver.findElement(By.id("com.instagram.android:id/language_name")).click();
+        driver.findElement(By.className("android.widget.TextView")).click();
+        driver.findElement(By.id("com.instagram.android:id/log_in_button")).click();
+
+
+
+
+
+    }
+
+
+
         //close the app
         @AfterClass
         public static void close () {
-            driver.quit();
+            driver.closeApp();
         }
 
 
